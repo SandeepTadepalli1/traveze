@@ -29,7 +29,7 @@
             android:textColorHint="#bbbbbb"
             android:drawableLeft="@drawable/email"/>
         <EditText
-            android:id="@+id/etUserName"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_default_bg"
@@ -39,7 +39,7 @@
             android:textColorHint="#bbbbbb"
             android:drawableLeft="@drawable/user"/>
         <EditText
-            android:id="@+id/etPass"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_bottom_bg"
@@ -47,10 +47,21 @@
             android:padding="10dp"
             android:hint="Password"
             android:textColorHint="#bbbbbb"
-            android:password="true"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"/>
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="Password"
+            android:textColorHint="#bbbbbb"
+            android:inputType="textPassword"
             android:drawableLeft="@drawable/password"/>
         <Button
-            android:id="@+id/btnSingIn"
+            android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"

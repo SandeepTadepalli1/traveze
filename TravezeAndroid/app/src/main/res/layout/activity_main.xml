@@ -39,6 +39,16 @@
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg"
             />
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Test"
+            style="@style/DefaultButtonText"
+            android:background="@drawable/button_default_bg"
+            />
     </LinearLayout>
 
 </RelativeLayout>

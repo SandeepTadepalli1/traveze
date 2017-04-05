@@ -1,5 +1,12 @@
 # This is a file in which all the constants are defined
 
+#Roles
 ROLE_USER = 100
 ROLE_HOTEL_MANAGER = 101
 ROLE_ADMIN = 102
+
+# Status
+STATUS_BAD_REQUEST = 400
+STATUS_UNAUTHORIZED = 401
+STATUS_OK = 200
+STATUS_CREATED = 201

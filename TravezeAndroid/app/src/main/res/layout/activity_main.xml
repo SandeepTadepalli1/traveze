@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:background="@drawable/button_default_bg"
             style="@style/DefaultButtonText"
             />

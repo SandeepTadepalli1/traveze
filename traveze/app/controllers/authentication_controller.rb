@@ -16,9 +16,9 @@ class AuthenticationController < ApplicationController
  def register
    @user = User.new(user_params)
    if @user.save
-     render json: {errors:"",status: :created}
+     render json: {errors:"",status: STATUS_CREATED}
    else
-     render json: {errors: @user.errors, status: :bad_request}
+     render json: {errors: @user.errors, status: STATUS_BAD_REQUEST}
    end
  end
 

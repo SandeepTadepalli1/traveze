@@ -48,8 +48,8 @@ public class SignInActivity extends AppCompatActivity {
                                 Toast.makeText(SignInActivity.this, "Invalid Credentials",
                                         Toast.LENGTH_SHORT).show();
                             }else if (response.getInt("status") == Constants.STATUS_OK) {
-                                Toast.makeText(SignInActivity.this, "LoggedIN",
-                                        Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignInActivity.this, "LoggedIN", Toast.LENGTH_SHORT).show();
+
                                 String authToken = response.getString("auth_token");
                                 prefs.edit().putString("Authorization",authToken).apply();
                             } else {

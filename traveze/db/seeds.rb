@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+place_list = ["Bangalore","Hyderabad","Chennai","Vijayawada","Indore","Bhopal","Guntur","Coimbatore"]
+
+place_list.each do |place|
+    Place.create(name: place)
+end

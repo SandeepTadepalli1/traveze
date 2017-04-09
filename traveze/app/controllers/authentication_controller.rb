@@ -8,7 +8,7 @@ class AuthenticationController < ApplicationController
    if command.success?
      render json: { auth_token: command.result,status: STATUS_OK }
    else
-     render json: { error: command.errors,status: STATUS_UNAUTHORIZED}
+     render json: { error: command.errors,status: STATUS_UNAUTHORIZED }
    end
  end
 
@@ -16,9 +16,9 @@ class AuthenticationController < ApplicationController
  def register
    @user = User.new(user_params)
    if @user.save
-     render json: {errors:"",status: STATUS_CREATED}
+     render json: { errors:"",status: STATUS_CREATED }
    else
-     render json: {errors: @user.errors, status: STATUS_BAD_REQUEST}
+     render json: { errors: @user.errors, status: STATUS_BAD_REQUEST }
    end
  end
 

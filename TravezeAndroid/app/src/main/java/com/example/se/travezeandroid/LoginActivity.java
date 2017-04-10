@@ -24,15 +24,13 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
-
 import butterknife.ButterKnife;
 import butterknife.Bind;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
-    SharedPreferences prefs;
+    MyPreference myPreference;
 
     @Bind(R.id.input_email) EditText _emailText;
     @Bind(R.id.input_password) EditText _passwordText;
@@ -44,8 +42,8 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        prefs = this.getSharedPreferences("com.example.se.traveze", Context.MODE_PRIVATE);
-
+        myPreference = MyPreference.getInstance(getApplicationContext());
+        checkLoggedIn();
         ButterKnife.bind(this);
 
         _loginButton.setOnClickListener(new View.OnClickListener() {
@@ -69,15 +67,14 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+
     public void login() {
         Log.d(TAG, "Login");
 
         if (!validate()) {
-            onLoginFailed();
+            onLoginFailed(null);
             return;
         }
-
-        _loginButton.setEnabled(false);
 
         final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this);
         progressDialog.setIndeterminate(true);
@@ -87,35 +84,26 @@ public class LoginActivity extends AppCompatActivity {
         String email = _emailText.getText().toString();
         String password = _passwordText.getText().toString();
 
+        JSONObject signInObject = getSignObject(email,password);
 
-        JSONObject signInObject = new JSONObject();
-        try {
-            signInObject.put("email",email);
-            signInObject.put("password",password);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        // TODO: Implement your own authentication logic here.
         Response.Listener<JSONObject> responseListner = new Response.Listener<JSONObject>(){
 
             @Override
             public void onResponse(JSONObject response) {
-                Log.v("SignIn", response.toString());
+                Log.i("SignIn", response.toString());
 
                 try {
                     if(response.getInt("status") == Constants.STATUS_UNAUTHORIZED){
-                        onLoginFailed();
+                        onLoginFailed(response);
                     }else if (response.getInt("status") == Constants.STATUS_OK) {
                         onLoginSuccess(response);
                     }else {
-                        onLoginFailed();
+                        onLoginFailed(response);
                     }
                     progressDialog.dismiss();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
             }
         };
         JsonObjectRequest signInRequest = new JsonObjectRequest(Request.Method.POST,Routes.Authenticate,signInObject,responseListner,null);
@@ -123,6 +111,16 @@ public class LoginActivity extends AppCompatActivity {
         queue.add(signInRequest);
     }
 
+    private JSONObject getSignObject(String email, String password) {
+        JSONObject signInObject = new JSONObject();
+        try {
+            signInObject.put("email",email);
+            signInObject.put("password",password);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return signInObject;
+    }
 
 
     @Override
@@ -132,19 +130,22 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginSuccess(JSONObject response) throws JSONException {
-        _loginButton.setEnabled(true);
+
         Toast.makeText(LoginActivity.this, "LoggedIN", Toast.LENGTH_SHORT).show();
 
         String authToken = response.getString("auth_token");
-        prefs.edit().putString("Authorization",authToken).apply();
+        myPreference.saveAuthToken(authToken);
         Log.v("On Login Success",response.toString());
         finish();
     }
 
-    public void onLoginFailed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
-
-        _loginButton.setEnabled(true);
+    public void onLoginFailed(JSONObject response) {
+        Toast.makeText(getBaseContext(), "Authentication failed", Toast.LENGTH_SHORT).show();
+        if (response != null){
+            Log.d(TAG,response.toString());
+        }
+        else
+            Log.d(TAG,"Response is null");
     }
 
     public boolean validate() {
@@ -168,5 +169,17 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         return valid;
+    }
+
+    private void checkLoggedIn() {
+        if(myPreference.isLoggedIn()){
+            startMainActivity();
+        }
+    }
+
+    private void startMainActivity() {
+        Intent intent = new Intent(this,MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        LoginActivity.this.startActivity(intent);
     }
 }

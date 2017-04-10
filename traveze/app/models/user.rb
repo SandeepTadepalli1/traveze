@@ -2,7 +2,7 @@ class User < ApplicationRecord
     has_secure_password
     before_save :downcase_email
 
-    validates_presence_of :email,:name
+    validates_presence_of :email,:name,:mobilenumber
     validates :email, uniqueness: true
 
     private

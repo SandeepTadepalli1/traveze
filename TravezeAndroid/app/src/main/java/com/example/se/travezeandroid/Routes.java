@@ -7,4 +7,5 @@ package com.example.se.travezeandroid;
 public class Routes {
     public static final String HOSTNAME= "http://172.16.82.215:2500";
     public static final String Authenticate = HOSTNAME+"/authenticate";
+    public static final String Register = HOSTNAME +"/register";
 }

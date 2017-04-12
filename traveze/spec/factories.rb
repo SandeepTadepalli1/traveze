@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :hotel_booking do
+    
+  end
   factory :manager do
     
   end

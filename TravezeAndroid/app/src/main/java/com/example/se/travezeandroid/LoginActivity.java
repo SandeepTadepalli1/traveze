@@ -1,10 +1,7 @@
 package com.example.se.travezeandroid;
 
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -27,7 +24,13 @@ import org.json.JSONObject;
 import butterknife.ButterKnife;
 import butterknife.Bind;
 
+
+/**
+ * @author sandeep
+ * @version 1.0
+ */
 public class LoginActivity extends AppCompatActivity {
+
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
     MyPreference myPreference;
@@ -56,6 +59,10 @@ public class LoginActivity extends AppCompatActivity {
 
         _signupLink.setOnClickListener(new View.OnClickListener() {
 
+            /**
+             * Starts the Signup activity
+             * @param v Current view
+             */
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
@@ -67,7 +74,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-
+    /**
+     * Validates the edit text input fields and creates a json request sends it to the server
+     * and processes the response
+     */
     public void login() {
         Log.d(TAG, "Login");
 
@@ -88,6 +98,11 @@ public class LoginActivity extends AppCompatActivity {
 
         Response.Listener<JSONObject> responseListner = new Response.Listener<JSONObject>(){
 
+            /**
+             * If the authentication is successful it calls {@link LoginActivity#onLoginSuccess(JSONObject)}
+             * else if the authenticaion is a failure it calls {@link LoginActivity#onLoginFailed(JSONObject)}
+             * @param response Response from the Server upon processing the request
+             */
             @Override
             public void onResponse(JSONObject response) {
                 Log.i("SignIn", response.toString());
@@ -111,6 +126,12 @@ public class LoginActivity extends AppCompatActivity {
         queue.add(signInRequest);
     }
 
+    /**
+     * Creates a sign in object that should be sent to server
+     * @param email email that should be sent
+     * @param password  password that should be sent
+     * @return SignIn json object if in valid json format else returns null
+     */
     private JSONObject getSignObject(String email, String password) {
         JSONObject signInObject = new JSONObject();
         try {
@@ -129,6 +150,12 @@ public class LoginActivity extends AppCompatActivity {
         moveTaskToBack(true);
     }
 
+
+    /**
+     * If login is successful it stores authtoken to the shared preferences {@link MyPreference#saveAuthToken(String)}
+     * @param response Response from the authentication request sent to the server
+     * @throws JSONException if Response does not have auth_token
+     */
     public void onLoginSuccess(JSONObject response) throws JSONException {
 
         Toast.makeText(LoginActivity.this, "LoggedIN", Toast.LENGTH_SHORT).show();
@@ -139,7 +166,13 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Shows a Toast to the user saying that Authentication failed
+     * @param response Response from the authentication request sent to the server
+     * @see Toast
+     */
     public void onLoginFailed(JSONObject response) {
+
         Toast.makeText(getBaseContext(), "Authentication failed", Toast.LENGTH_SHORT).show();
         if (response != null){
             Log.d(TAG,response.toString());
@@ -148,6 +181,13 @@ public class LoginActivity extends AppCompatActivity {
             Log.d(TAG,"Response is null");
     }
 
+    /**
+     * Validates the Edit text fields and checks if they contain valid content so we can create a
+     * valid request
+     * Sets Error over the Edit text fields if they contain non valid content
+     * @return true if valid else false
+     * @see EditText#setError(CharSequence)
+     */
     public boolean validate() {
         boolean valid = true;
 
@@ -161,8 +201,8 @@ public class LoginActivity extends AppCompatActivity {
             _emailText.setError(null);
         }
 
-        if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-            _passwordText.setError("between 4 and 10 alphanumeric characters");
+        if (password.isEmpty() || password.length() < 8) {
+            _passwordText.setError("should be a min of 8 characters");
             valid = false;
         } else {
             _passwordText.setError(null);
@@ -171,12 +211,22 @@ public class LoginActivity extends AppCompatActivity {
         return valid;
     }
 
+    /**
+     * Checks if the user is logged in.
+     * If he is already logged in then it starts the main activity
+     * @see MyPreference
+     * {@link #startMainActivity()}
+     */
     private void checkLoggedIn() {
         if(myPreference.isLoggedIn()){
             startMainActivity();
         }
     }
 
+    /**
+     * Starts Main activity
+     * @see Intent
+     */
     private void startMainActivity() {
         Intent intent = new Intent(this,MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

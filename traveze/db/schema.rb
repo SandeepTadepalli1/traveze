@@ -10,15 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170409191235) do
+ActiveRecord::Schema.define(version: 20170411053843) do
 
   create_table "buses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.time     "arrival_time"
     t.time     "departure_time"
-    t.integer  "bus_type",       default: 1200
-    t.integer  "cost",           default: 500
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.integer  "bus_type",            default: 1200
+    t.integer  "cost",                default: 500
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+    t.integer  "startplace_id"
+    t.integer  "destinationplace_id"
+    t.index ["destinationplace_id"], name: "index_buses_on_destinationplace_id", using: :btree
+    t.index ["startplace_id"], name: "index_buses_on_startplace_id", using: :btree
+  end
+
+  create_table "hotel_bookings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "trip_id"
+    t.integer  "hotel_id"
+    t.integer  "num_days"
+    t.integer  "cost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["hotel_id"], name: "index_hotel_bookings_on_hotel_id", using: :btree
+    t.index ["trip_id"], name: "index_hotel_bookings_on_trip_id", using: :btree
   end
 
   create_table "hotels", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -33,6 +48,10 @@ ActiveRecord::Schema.define(version: 20170409191235) do
   create_table "managers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "hotel_id"
+    t.index ["hotel_id"], name: "index_managers_on_hotel_id", using: :btree
+    t.index ["user_id"], name: "index_managers_on_user_id", using: :btree
   end
 
   create_table "places", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -46,6 +65,8 @@ ActiveRecord::Schema.define(version: 20170409191235) do
     t.integer  "cost",       default: 1000
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "hotel_id"
+    t.index ["hotel_id"], name: "index_rooms_on_hotel_id", using: :btree
   end
 
   create_table "trips", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -55,6 +76,8 @@ ActiveRecord::Schema.define(version: 20170409191235) do
     t.date     "date_of_booking"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_trips_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -66,6 +89,9 @@ ActiveRecord::Schema.define(version: 20170409191235) do
     t.integer  "role",            default: 100
     t.boolean  "is_premium",      default: false
     t.string   "mobilenumber"
+    t.index ["email"], name: "index_users_on_email", using: :btree
   end
 
+  add_foreign_key "managers", "hotels"
+  add_foreign_key "trips", "users"
 end

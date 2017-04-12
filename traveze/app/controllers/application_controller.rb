@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
   before_action :authenticate_request
   before_action :getuser
 
-  attr_reader :current_user
+  # attr_reader :current_user
   private
 
   def authenticate_request
@@ -12,5 +12,6 @@ class ApplicationController < ActionController::API
 
     def getuser
         @current_user = AuthorizeApiRequest.call(request.headers).result
+        puts @current_user
     end
 end

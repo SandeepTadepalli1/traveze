@@ -1,5 +1,6 @@
 class TestController < ApplicationController
     def username
-        render json: {user: @current_user, status: STATUS_OK}
+        m = Manager.first
+        render json: {manager: m.as_json(include: [:hotel,:user]), status: STATUS_OK}
     end
 end

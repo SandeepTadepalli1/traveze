@@ -1,5 +1,5 @@
 class AddUserToTrips < ActiveRecord::Migration[5.0]
   def change
-    add_reference :trips, :user, foreign_key: true
+    add_reference :trips, :user
   end
 end

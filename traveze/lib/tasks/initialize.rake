@@ -12,10 +12,10 @@ namespace :initialize do
     u2 = User.create(:name => "manager2", :email => "manager2@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10))
     h1 = Hotel.create(:name => "hotel1")
     h2 = Hotel.create(:name => "hotel2")
-
+    h1.add_dummy_rooms
+    h2.add_dummy_rooms
     h1.create_manager(:user_id=>u2.id)
     h2.create_manager(:user_id=>u1.id)
-
   end
 
   task places: :environment do
@@ -27,7 +27,7 @@ namespace :initialize do
 
   end
   task admin: :environment do
-      u1 = User.create(:name => "test1", :email => "admin1@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10),:role=>ROLE_ADMIN)
+      u1 = User.create(:name => "admin1", :email => "admin1@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10),:role=>ROLE_ADMIN)
   end
 
     task reset: :environment do

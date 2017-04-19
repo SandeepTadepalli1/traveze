@@ -12,6 +12,5 @@ class ApplicationController < ActionController::API
 
     def getuser
         @current_user = AuthorizeApiRequest.call(request.headers).result
-        puts @current_user
     end
 end

@@ -12,7 +12,6 @@ import java.util.Objects;
 
 class MyPreference {
     private static MyPreference myPreference;
-    private final Context actContext;
     private SharedPreferences sharedPreferences;
     static MyPreference getInstance(Context context) {
         if (myPreference == null) {
@@ -22,7 +21,6 @@ class MyPreference {
     }
 
     private MyPreference(Context context) {
-        this.actContext = context;
         sharedPreferences = context.getSharedPreferences("com.example.se.traveze",Context.MODE_PRIVATE);
     }
 
@@ -41,9 +39,7 @@ class MyPreference {
 
     boolean isLoggedIn(){
         String authToken = getData("Authorization");
-        if(Objects.equals(authToken, "")){
-            return false;
-        }else return true;
+        return !Objects.equals(authToken, "");
     }
 
     void saveAuthToken(String authToken){
@@ -67,19 +63,6 @@ class MyPreference {
         }
     }
 
-    void startLoginActivity(){
-        Intent intent = new Intent(actContext,LoginActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        actContext.startActivity(intent);
-    }
-
-    void startMyAccountActivity(){
-
-        Intent intent = new Intent(actContext,MyAccountActivity.class)
-                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        actContext.startActivity(intent);
-
-    }
 
     void logout(){
         saveData("Authorization","");

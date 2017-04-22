@@ -10,29 +10,29 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/content_my_account.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable/side_nav_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/nav_header_main.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/activity_main_drawer.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/TestActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/TestActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/LoginActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MainActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories.rb" afterPath="$PROJECT_DIR$/spec/factories.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -592,7 +592,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186626000" />
+    <option name="totallyTimeSpent" value="186631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,7 +604,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23505977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

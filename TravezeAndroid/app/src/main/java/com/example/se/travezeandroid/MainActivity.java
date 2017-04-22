@@ -2,6 +2,7 @@ package com.example.se.travezeandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity
 
         myPreference = MyPreference.getInstance(getApplicationContext());
 
+
         checkLoggedin();
 
     }
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity
         if(!myPreference.isLoggedIn()){
             navigationView.getMenu().findItem(R.id.nav_login).setVisible(true);
             navigationView.getMenu().findItem(R.id.nav_logout).setVisible(false);
-            startLoginActivity();
+            myPreference.startLoginActivity();
 
         }else{
             navigationView.getMenu().findItem(R.id.nav_login).setVisible(false);
@@ -70,27 +72,21 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_my_account) {
+            myPreference.startMyAccountActivity();
         } else if(id == R.id.nav_logout) {
             myPreference.logout();
-            startLoginActivity();
+            myPreference.startLoginActivity();
         } else if(id == R.id.nav_login){
-            startLoginActivity();
+            myPreference.startLoginActivity();
+        } else if(id == R.id.nav_admin){
+
+        } else if(id == R.id.nav_manager){
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -98,11 +94,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void startLoginActivity(){
-        Intent intent = new Intent(this, LoginActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        MainActivity.this.startActivity(intent);
-    }
+
     @Override
     public void onResume(){
         super.onResume();

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170417091756) do
+ActiveRecord::Schema.define(version: 20170420074746) do
 
   create_table "buses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.time     "arrival_time"
@@ -45,6 +45,8 @@ ActiveRecord::Schema.define(version: 20170417091756) do
     t.integer  "numberofrooms"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.integer  "place_id"
+    t.index ["place_id"], name: "index_hotels_on_place_id", using: :btree
   end
 
   create_table "managers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

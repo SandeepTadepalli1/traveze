@@ -15,11 +15,13 @@ class User < ApplicationRecord
         end
     end
 
-    def add_hotel(hotel_name,state,numberofrooms,manager_email)
+    def add_hotel(hotel_name,state,numberofrooms,manager_email,place)
         if check_admin?
+            @place = Place.find_by_name(place)
             @hotel = Hotel.new(name:hotel_name,
                                state: state,
-                               numberofrooms: numberofrooms)
+                               numberofrooms: numberofrooms,
+                               place_id: @place.id)
             @manager_user = User.find_by_email(manager_email)
             if @manager_user
                 @manager = @hotel.build_manager(user_id: @manager_user.id)

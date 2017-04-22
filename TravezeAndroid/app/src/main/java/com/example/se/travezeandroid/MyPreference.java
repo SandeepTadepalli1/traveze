@@ -1,6 +1,7 @@
 package com.example.se.travezeandroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 
 import org.json.JSONException;
@@ -9,11 +10,11 @@ import org.json.JSONObject;
 import java.util.Objects;
 
 
-public class MyPreference {
+class MyPreference {
     private static MyPreference myPreference;
+    private final Context actContext;
     private SharedPreferences sharedPreferences;
-
-    public static MyPreference getInstance(Context context) {
+    static MyPreference getInstance(Context context) {
         if (myPreference == null) {
             myPreference = new MyPreference(context);
         }
@@ -21,6 +22,7 @@ public class MyPreference {
     }
 
     private MyPreference(Context context) {
+        this.actContext = context;
         sharedPreferences = context.getSharedPreferences("com.example.se.traveze",Context.MODE_PRIVATE);
     }
 
@@ -36,6 +38,7 @@ public class MyPreference {
         }
         return "";
     }
+
     public boolean isLoggedIn(){
         String authToken = getData("Authorization");
         if(Objects.equals(authToken, "")){
@@ -46,6 +49,7 @@ public class MyPreference {
     public void saveAuthToken(String authToken){
         saveData("Authorization",authToken);
     }
+
     public String getUserName(){
         return getData("username");
     }
@@ -63,7 +67,25 @@ public class MyPreference {
         }
     }
 
+    public void startLoginActivity(){
+        Intent intent = new Intent(actContext,LoginActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        actContext.startActivity(intent);
+    }
+
+    public void startMyAccountActivity(){
+
+        Intent intent = new Intent(actContext,MyAccountActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        actContext.startActivity(intent);
+
+    }
+
     public  void logout(){
         saveData("Authorization","");
+    }
+
+    public void setNavigationHeadear(){
+        // TODO if Logged in then should set the username and email in the navigation Header.
     }
 }

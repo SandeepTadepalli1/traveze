@@ -11,4 +11,8 @@
     <string name="password">Password</string>
     <string name="no_account_yet">No account yet? Create one</string>
     <string name="hello_world">Hello World!</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="my_account">My Account</string>
+    <string name="admin">Admin</string>
+    <string name="manager">Manager</string>
 </resources>

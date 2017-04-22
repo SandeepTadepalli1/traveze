@@ -1,4 +1,5 @@
 class Hotel < ApplicationRecord
+    belongs_to :place
     has_one :manager
     has_many :rooms, inverse_of: :hotel,:dependent => :delete_all
     has_many :hotel_bookings

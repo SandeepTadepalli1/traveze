@@ -3,7 +3,7 @@ class User < ApplicationRecord
     before_save :downcase_email
 
     validates_presence_of :email,:name,:mobilenumber
-    validates :email, uniqueness: true
+    validates_uniqueness_of :email
     has_many :trips
 
 
@@ -59,7 +59,7 @@ class User < ApplicationRecord
     #   }
     #   bus: {
     #     bus_id: 10
-    #     num_seats; 25
+    #     num   _seats; 25
     #   }
     # }
     def create_trip(trip)

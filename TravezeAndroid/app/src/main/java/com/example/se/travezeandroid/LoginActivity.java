@@ -164,6 +164,7 @@ public class LoginActivity extends AppCompatActivity {
         myPreference.saveAuthToken(authToken);
         Log.v("On Login Success",response.toString());
         finish();
+        startMainActivity();
     }
 
     /**

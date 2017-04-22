@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
 
     it "validates uniquess of email" do
         u1 = create(:user)
-        u2 = User.new(:name => u1.name,:email => u1.email, :password => "thanks123")
+        u2 = User.new(:name => u1.name,:email => u1.email, :password => "thanks123", :mobilenumber => "1234567890")
         expect(u2.save).to eq(false)
     end
 end

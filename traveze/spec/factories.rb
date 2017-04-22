@@ -21,6 +21,7 @@ FactoryGirl.define do
         name {Faker::Name.first_name}
         email {Faker::Internet.email}
         password "thanks123"
+        mobilenumber {Faker::Number.number(10)}
     end
 
     factory :place do

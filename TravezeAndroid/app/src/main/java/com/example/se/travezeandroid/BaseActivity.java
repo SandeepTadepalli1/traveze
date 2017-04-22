@@ -17,16 +17,8 @@ import android.view.MenuItem;
 
 public class BaseActivity extends AppCompatActivity {
     protected MyPreference myPreference;
+    private static final String TAG = BaseActivity.class.getName();
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,7 +35,7 @@ public class BaseActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        Log.i("Main activity","menu item clicked");
+        Log.i(TAG,"menu item clicked");
 
         if (id == R.id.action_my_account) {
             startMyAccountActivity();

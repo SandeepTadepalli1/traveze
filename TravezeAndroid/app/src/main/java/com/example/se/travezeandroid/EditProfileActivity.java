@@ -34,13 +34,18 @@ public class EditProfileActivity extends BaseActivity {
         setContentView(R.layout.activity_edit_profile);
         myPreference = MyPreference.getInstance(getApplicationContext());
         ButterKnife.bind(this);
-
+        setValues();
         _update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 update();
             }
         });
+    }
+
+    private void setValues() {
+        _mobileNumber.setText(myPreference.getMobileNumber());
+        _name.setText(myPreference.getUserName());
     }
 
     private void update() {
@@ -129,9 +134,6 @@ public class EditProfileActivity extends BaseActivity {
             Log.d(TAG,"response is null");
         }
     }
-
-
-
 
 
     /**

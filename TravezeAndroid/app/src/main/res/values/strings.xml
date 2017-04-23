@@ -22,4 +22,9 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="name">Name</string>
+    <string name="add_hotel">Add Hotel</string>
+    <string name="view_hotels">View Hotels</string>
+    <string name="number_of_rooms">Number of Rooms</string>
+    <string name="state">State</string>
+    <string name="place">Place</string>
 </resources>

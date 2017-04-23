@@ -13,6 +13,7 @@ import java.util.Objects;
 class MyPreference {
     private static MyPreference myPreference;
     private SharedPreferences sharedPreferences;
+
     static MyPreference getInstance(Context context) {
         if (myPreference == null) {
             myPreference = new MyPreference(context);
@@ -76,10 +77,8 @@ class MyPreference {
     }
 
 
-    void startAdminActivity() {
-//        TODO create a intent to start the Admin Activity
-    }
-    void startManagerActivity(){
-//        TODO create a intent to start the manager Activity
+
+    public String getMobileNumber() {
+        return getData("mobilenumber");
     }
 }

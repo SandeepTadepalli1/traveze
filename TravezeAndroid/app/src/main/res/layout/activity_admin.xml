@@ -8,62 +8,72 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="56dp"
+        android:paddingTop="24dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_hotelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hotel Name" />
+        </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/et_startLocation"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_place"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="From" />
+                android:hint="@string/place" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/et_endLocation"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="To" />
+                android:hint="@string/state" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/et_startDate"
-                android:inputType="date"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_numberOfRooms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Start Date" />
+                android:inputType="number"
+                android:hint="@string/number_of_rooms" />
         </android.support.design.widget.TextInputLayout>
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
-            <EditText android:id="@+id/et_returnDate"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/et_managerEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date"
-                android:hint="End Date" />
+                android:inputType="textEmailAddress"
+                android:hint="@string/email" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_searchHotel"
+            android:id="@+id/btn_addHotel"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:text="@string/add_hotel"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_viewHotels"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Search Hotels"/>
+            android:text="@string/view_hotels"/>
 
     </LinearLayout>
-
 </ScrollView>

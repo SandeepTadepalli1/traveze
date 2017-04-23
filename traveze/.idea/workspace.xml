@@ -7,43 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a474fc-c7b7-4026-8dba-ac9b92dbc97d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-hdpi/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-hdpi/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-mdpi/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-mdpi/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xhdpi/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xhdpi/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xxhdpi/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xxhdpi/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/EditProfileActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_edit_profile.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_gallery.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_login.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_logout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_base.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/app_bar_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/content_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/nav_header_base.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/activity_base_drawer.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_admin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/Routes.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/Routes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/SignupActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/SignupActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/AdminActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/AdminActivity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -104,17 +70,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="railsapiexample.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="railsapiexample.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="120">
               <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -270,38 +236,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,7 +566,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191519000" />
+    <option name="totallyTimeSpent" value="192202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,6 +579,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23505977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -653,7 +588,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6142433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38244048" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38244048" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1070,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-825">
@@ -1098,6 +1025,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -50,9 +50,9 @@ public class BaseActivity extends AppCompatActivity {
         } else if(id == R.id.action_login){
             startLoginActivity();
         } else if(id == R.id.action_admin){
-            myPreference.startAdminActivity();
+            startAdminActivity();
         } else if(id == R.id.action_manager){
-            myPreference.startManagerActivity();
+            startManagerActivity();
         }
 
 
@@ -91,6 +91,15 @@ public class BaseActivity extends AppCompatActivity {
         }else {
             queue.add(req);
         }
+    }
+
+    void startAdminActivity() {
+        Intent intent = new Intent(getApplicationContext(),AdminActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getApplicationContext().startActivity(intent);
+    }
+    void startManagerActivity(){
+//        TODO create a intent to start the manager Activity
     }
 
 }

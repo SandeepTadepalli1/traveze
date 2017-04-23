@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/action_my_account"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_action_person"
             android:title="@string/my_account"
             app:showAsAction="never"/>
         <item
@@ -19,14 +19,14 @@
             app:showAsAction="never"/>
         <item
             android:id="@+id/action_login"
-            android:icon="@drawable/ic_menu_login"
+            android:icon="@drawable/login"
             android:title="@string/login"
             android:visible="false"
             app:showAsAction="never"/>
 
         <item
             android:id="@+id/action_logout"
-            android:icon="@drawable/ic_menu_logout"
+            android:icon="@drawable/logout"
             android:title="@string/logout"
             android:visible="true"
             app:showAsAction="never"/>

@@ -14,12 +14,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 
 public class BaseActivity extends AppCompatActivity {
     protected MyPreference myPreference;
     private static final String TAG = BaseActivity.class.getName();
 
-
+    private RequestQueue queue;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -67,5 +71,26 @@ public class BaseActivity extends AppCompatActivity {
         getApplicationContext().startActivity(intent);
     }
 
+    protected void startMainActivity(){
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class)
+                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getApplicationContext().startActivity(intent);
+    }
+
+    protected void createShortToast(String content){
+        Toast.makeText(getBaseContext(), content, Toast.LENGTH_SHORT).show();
+    }
+
+    protected void createLongToast(String contest){
+        Toast.makeText(getBaseContext(), contest, Toast.LENGTH_LONG).show();
+    }
+
+    protected void sendRequest(MyRequest req){
+        if(queue == null) {
+            queue = Volley.newRequestQueue(getApplicationContext());
+        }else {
+            queue.add(req);
+        }
+    }
 
 }

@@ -46,6 +46,10 @@ class MyPreference {
         saveData("Authorization",authToken);
     }
 
+    String getAuthToken(){
+        return getData("Authorization");
+    }
+
     String getUserName(){
         return getData("username");
     }
@@ -58,6 +62,9 @@ class MyPreference {
         try {
             saveData("username",user.getString("name"));
             saveData("email",user.getString("email"));
+            saveData("mobilenumber",user.getString("mobilenumber"));
+            saveData("user_role", String.valueOf(user.getInt("role")));
+            saveData("user_id",String.valueOf(user.getInt("id")));
         } catch (JSONException e) {
             e.printStackTrace();
         }

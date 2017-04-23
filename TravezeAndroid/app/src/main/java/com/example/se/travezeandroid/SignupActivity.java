@@ -22,7 +22,7 @@ import org.json.JSONObject;
 import butterknife.ButterKnife;
 import butterknife.Bind;
 
-public class SignupActivity extends AppCompatActivity {
+public class SignupActivity extends BaseActivity {
     private static final String TAG = "SignupActivity";
 
     @Bind(R.id.input_name) EditText _nameText;
@@ -33,7 +33,6 @@ public class SignupActivity extends AppCompatActivity {
     @Bind(R.id.btn_signup) Button _signupButton;
     @Bind(R.id.link_login) TextView _loginLink;
 
-    MyPreference myPreference;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +79,6 @@ public class SignupActivity extends AppCompatActivity {
         String password = _passwordText.getText().toString();
         String reEnterPassword = _reEnterPasswordText.getText().toString();
 
-        // TODO: Implement your own signup logic here.
         JSONObject signupObject = createSignupObject(name,email,mobile,password,reEnterPassword);
 
         Response.Listener<JSONObject> responseListner = new Response.Listener<JSONObject>(){
@@ -122,11 +120,6 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
-    private void startMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        SignupActivity.this.startActivity(intent);
-    }
 
     private void onRegisterFailed(JSONObject response) {
         Toast.makeText(getBaseContext(), "failed", Toast.LENGTH_SHORT).show();

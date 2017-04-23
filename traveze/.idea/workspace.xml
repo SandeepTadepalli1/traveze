@@ -7,32 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a474fc-c7b7-4026-8dba-ac9b92dbc97d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/content_my_account.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable/side_nav_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/nav_header_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/activity_main_drawer.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-hdpi/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-hdpi/logout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-mdpi/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-mdpi/logout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xhdpi/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xhdpi/logout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xxhdpi/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-xxhdpi/logout.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/EditProfileActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_edit_profile.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_login.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_logout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_manage.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_send.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/TestActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/TestActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/LoginActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/LoginActivity.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_share.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_base.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/app_bar_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/content_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/nav_header_base.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/activity_base_drawer.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MainActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyAccountActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/MyPreference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/Routes.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/Routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/SignupActivity.java" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/java/com/example/se/travezeandroid/SignupActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/layout/activity_my_account.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/menu/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../TravezeAndroid/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -73,11 +84,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bus.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bus.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bus.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-825">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="railsapiexample.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/manager_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -92,6 +163,7 @@
       <find>config.token_authentication_key = :auth_token</find>
       <find>authenticatable</find>
       <find>sad</find>
+      <find>trip</find>
     </findStrings>
   </component>
   <component name="GeneratorOptions">
@@ -142,11 +214,9 @@
         <option value="$PROJECT_DIR$/lib/tasks/initialize.rake" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentication_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/manager_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/manager.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/hotel.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170420074746_add_place_to_hotel.rb" />
         <option value="$PROJECT_DIR$/railsapiexample.txt" />
@@ -155,6 +225,8 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
       </list>
     </option>
   </component>
@@ -198,38 +270,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="traveze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -324,7 +364,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="user&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/user.rb&#10;sche&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/db/schema.rb&#10;bus&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/bus.rb&#10;rails&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/railsapiexample.txt&#10;ma&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb&#10;place&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/place.rb&#10;user.&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/user.rb&#10;manager&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb&#10;schema&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/db/schema.rb&#10;cons&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/config/initializers/constants.rb&#10;rou&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/config/routes.rb&#10;admin&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/controllers/admin_controller.rb&#10;manage&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb" />
+    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/config/routes.rb&#10;user&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/user.rb&#10;sche&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/db/schema.rb&#10;bus&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/bus.rb&#10;rails&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/railsapiexample.txt&#10;ma&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb&#10;place&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/place.rb&#10;user.&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/user.rb&#10;manager&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb&#10;schema&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/db/schema.rb&#10;cons&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/config/initializers/constants.rb&#10;rou&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/config/routes.rb&#10;admin&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/controllers/admin_controller.rb&#10;manage&#9;FILE&#9;file:///home/sandeep/sandeep/6th sem/se/project/traveze/traveze/app/models/manager.rb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -592,7 +632,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186631000" />
+    <option name="totallyTimeSpent" value="191519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,27 +644,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="7" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23505977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6142433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38244048" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998565" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.50278884" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3758967" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6142433" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38244048" sideWeight="0.49721116" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23505977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -783,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/constants.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -799,8 +840,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -861,24 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/manager.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -920,8 +948,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/manager_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
+        <state relative-caret-position="15">
           <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -973,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/hotel_booking.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1001,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,6 +1066,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/railsapiexample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-825">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>

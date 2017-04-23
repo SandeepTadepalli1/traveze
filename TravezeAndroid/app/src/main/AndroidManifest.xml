@@ -25,12 +25,12 @@
         <activity android:name=".SignupActivity" />
         <activity
             android:name=".MyAccountActivity"
-            android:label="@string/title_activity_my_account"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BaseActivity"
             android:label="@string/title_activity_base"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditProfileActivity"></activity>
     </application>
 
 </manifest>

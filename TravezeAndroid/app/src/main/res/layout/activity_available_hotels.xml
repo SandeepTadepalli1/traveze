@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.se.travezeandroid.available_hotels">
+
+    <TextView
+        android:id="@+id/hotel_avail"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text="@string/Hotelsavail"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/hotel_name"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:text="@string/Hotelname"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="90dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_loc"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:text="@string/Hotelloca"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hotel_rating"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hotel_name" />
+
+    <TextView
+        android:id="@+id/hotel_rating"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:text="@string/Ratings"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hotel_cost"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:text="@string/Cost"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="83dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hotel_rating" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="22dp"
+        android:text="@string/modify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/hotel_cost"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/search_trav"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:text="@string/Searchtransport"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        android:layout_marginStart="21dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toRightOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/Save"
+        app:layout_constraintRight_toLeftOf="@+id/home"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/hotel_rating" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/Home"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/search_trav"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/search_trav" />
+
+</android.support.constraint.ConstraintLayout>

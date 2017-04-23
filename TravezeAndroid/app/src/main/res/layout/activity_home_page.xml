@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.se.travezeandroid.home_page"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:text="@string/Signup"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="39dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:text="@string/login"
+        android:layout_marginEnd="46dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/end_dest"
+        android:layout_width="304dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Enddest"
+        tools:layout_editor_absoluteY="169dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/start_dest"
+        android:layout_width="303dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Startdest"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="116dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/start_date"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/Startdate"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/end_date"
+        android:layout_width="299dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/Enddate"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="277dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/num_days"
+        android:layout_width="299dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/NoOfDays"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="335dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/budget"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/Budget"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="380dp"
+        tools:ignore="LabelFor,MissingConstraints" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        android:text="@string/Searchhotel"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="434dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/search_transport"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:text="@string/Searchtransport"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="434dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

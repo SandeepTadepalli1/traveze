@@ -1,11 +1,19 @@
 package com.example.se.travezeandroid;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.toolbox.JsonObjectRequest;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -49,13 +57,63 @@ public class AdminActivity extends BaseActivity {
             onAddHotelFailed(null);
             return;
         }
-        Log.v(TAG,"TO create a request");
+        final ProgressDialog progressDialog = new ProgressDialog(AdminActivity.this);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Creating....");
+        progressDialog.show();
 
+        Log.v(TAG,"TO create a request");
+        Response.Listener<JSONObject> responseListner = new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    if(response.getInt("status") == Constants.STATUS_BAD_REQUEST){
+                        onAddHotelFailed(response);
+                    }else if (response.getInt("status") == Constants.STATUS_CREATED) {
+                        onAddHotelSuccess(response);
+                    }else {
+                        onAddHotelFailed(response);
+                    }
+                    progressDialog.dismiss();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        JSONObject hotelObject = createHotelObject();
+        MyRequest addHotelRequest = new MyRequest(Request.Method.POST, Routes.AddHotel, hotelObject,
+                responseListner, null, getApplicationContext());
 //        TODO Create a request to add hotel to the database
+        sendRequest(addHotelRequest);
     }
 
-    private void onAddHotelFailed(MyRequest response) {
+    private JSONObject createHotelObject() {
+        JSONObject hotelObject = new JSONObject();
+        String hotelName = _hotelName.getText().toString();
+        String place = _place.getText().toString();
+        String state = _state.getText().toString();
+        String numberOfRooms = _numberOfRooms.getText().toString();
+        String managerEmail = _managerEmail.getText().toString();
+        try {
+            hotelObject.put("hotel_name",hotelName);
+            hotelObject.put("place",place);
+            hotelObject.put("state",state);
+            hotelObject.put("manager_email",managerEmail);
+            hotelObject.put("number_of_rooms",numberOfRooms);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
+        return hotelObject;
+    }
+
+    private void onAddHotelSuccess(JSONObject response) {
+        createShortToast("Hotel Successfully Added");
+        startMainActivity();
+    }
+
+    private void onAddHotelFailed(JSONObject response) {
+        createShortToast("Creation Failed");
     }
 
     private boolean validate() {

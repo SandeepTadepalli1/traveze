@@ -6,7 +6,8 @@ class AdminController < ApplicationController
       state = params["state"]
       numrooms = params["number_of_rooms"]
       manager_email = params["manager_email"]
-      r = @current_user.add_hotel(hotel_name,state,numrooms,manager_email)
+      place = params["place"]
+      r = @current_user.add_hotel(hotel_name,state,numrooms,manager_email,place)
       if r[0]
           render json: {errors: "",
                         status: STATUS_CREATED,

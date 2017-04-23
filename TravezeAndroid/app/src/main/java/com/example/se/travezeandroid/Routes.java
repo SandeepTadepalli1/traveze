@@ -5,8 +5,9 @@ package com.example.se.travezeandroid;
  */
 
 class Routes {
-    public static final String HOSTNAME= "http://172.16.83.136:2500";
-    public static final String Authenticate = HOSTNAME+"/authenticate";
-    public static final String Register = HOSTNAME +"/user/register";
-    public static final String Update = HOSTNAME + "/user/update";
+    private static final String HOSTNAME= "http://172.16.83.136:2500";
+    static final String Authenticate = HOSTNAME+"/authenticate";
+    static final String Register = HOSTNAME +"/user/register";
+    static final String Update = HOSTNAME + "/user/update";
+    static final String AddHotel = HOSTNAME + "/admin/add_hotel";
 }

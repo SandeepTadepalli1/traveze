@@ -10,6 +10,6 @@ Rails.application.routes.draw do
 
   post 'authenticate', to: 'authentication#authenticate'
   get 'username', to: 'test#username'
-  get 'place/get_hotels'
+  post 'place/hotels'
 
 end

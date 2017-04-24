@@ -1,7 +1,7 @@
 class PlaceController < ApplicationController
-    def get_hotels
+    def hotels
         place = params["place"]
-        @place = place.find_by_name(place)
-        render json:{hotels: @place.hotels.as_json(include: :rooms),status:STATUS_OK}
+        @place = Place.find_by_name(place.downcase)
+        render json: {hotels: @place.hotels.as_json,status:STATUS_OK}
     end
 end

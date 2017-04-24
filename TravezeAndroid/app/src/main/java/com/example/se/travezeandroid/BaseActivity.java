@@ -88,6 +88,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void sendRequest(MyRequest req){
         if(queue == null) {
             queue = Volley.newRequestQueue(getApplicationContext());
+            queue.add(req);
         }else {
             queue.add(req);
         }

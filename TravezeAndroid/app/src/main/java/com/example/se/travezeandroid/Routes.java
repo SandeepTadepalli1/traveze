@@ -10,4 +10,5 @@ class Routes {
     static final String Register = HOSTNAME +"/user/register";
     static final String Update = HOSTNAME + "/user/update";
     static final String AddHotel = HOSTNAME + "/admin/add_hotel";
+    static final String GetHotels = HOSTNAME + "/place/hotels";
 }

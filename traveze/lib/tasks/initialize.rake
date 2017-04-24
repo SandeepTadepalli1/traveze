@@ -8,10 +8,10 @@ namespace :initialize do
 
   desc "TODO"
   task test_hotels: :environment do
-    u1 = User.create(:name => "manager1", :email => "manager1@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10))
-    u2 = User.create(:name => "manager2", :email => "manager2@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10))
-    h1 = Hotel.create(:name => "hotel1")
-    h2 = Hotel.create(:name => "hotel2")
+    u1 = User.create(:name => "manager1", :email => "manager4@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10))
+    u2 = User.create(:name => "manager2", :email => "manager5@gmail.com", :password => "thanks123", :password_confirmation =>"thanks123", :mobilenumber =>Faker::Number.number(10))
+    h1 = Hotel.create(:name => "hotel1",:place_id => Place.find_by_name("bangalore").id)
+    h2 = Hotel.create(:name => "hotel2",:place_id => Place.find_by_name("bangalore").id)
     h1.add_dummy_rooms
     h2.add_dummy_rooms
     h1.create_manager(:user_id=>u2.id)

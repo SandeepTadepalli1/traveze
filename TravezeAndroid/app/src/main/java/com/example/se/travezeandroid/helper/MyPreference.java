@@ -1,7 +1,6 @@
-package com.example.se.travezeandroid;
+package com.example.se.travezeandroid.helper;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 
 import org.json.JSONException;
@@ -10,11 +9,11 @@ import org.json.JSONObject;
 import java.util.Objects;
 
 
-class MyPreference {
+public class MyPreference {
     private static MyPreference myPreference;
     private SharedPreferences sharedPreferences;
 
-    static MyPreference getInstance(Context context) {
+    public static MyPreference getInstance(Context context) {
         if (myPreference == null) {
             myPreference = new MyPreference(context);
         }
@@ -25,41 +24,41 @@ class MyPreference {
         sharedPreferences = context.getSharedPreferences("com.example.se.traveze",Context.MODE_PRIVATE);
     }
 
-    void saveData(String key,String value) {
+    public void saveData(String key,String value) {
         SharedPreferences.Editor prefsEditor = sharedPreferences.edit();
         prefsEditor .putString(key, value);
         prefsEditor.apply();
     }
 
-    String getData(String key) {
+    public String getData(String key) {
         if (sharedPreferences!= null) {
             return sharedPreferences.getString(key, "");
         }
         return "";
     }
 
-    boolean isLoggedIn(){
+    public boolean isLoggedIn(){
         String authToken = getData("Authorization");
         return !Objects.equals(authToken, "");
     }
 
-    void saveAuthToken(String authToken){
+    public void saveAuthToken(String authToken){
         saveData("Authorization",authToken);
     }
 
-    String getAuthToken(){
+    public String getAuthToken(){
         return getData("Authorization");
     }
 
-    String getUserName(){
+    public String getUserName(){
         return getData("username");
     }
 
-    String getEmail(){
+    public String getEmail(){
         return getData("email");
     }
 
-    void saveUserInfo(JSONObject user){
+    public void saveUserInfo(JSONObject user){
         try {
             saveData("username",user.getString("name"));
             saveData("email",user.getString("email"));
@@ -72,7 +71,7 @@ class MyPreference {
     }
 
 
-    void logout(){
+    public void logout(){
         saveData("Authorization","");
     }
 

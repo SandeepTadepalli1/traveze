@@ -1,12 +1,11 @@
-package com.example.se.travezeandroid;
+package com.example.se.travezeandroid.helper;
 
 import android.content.Context;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
+import com.example.se.travezeandroid.helper.MyPreference;
 
 import org.json.JSONObject;
 

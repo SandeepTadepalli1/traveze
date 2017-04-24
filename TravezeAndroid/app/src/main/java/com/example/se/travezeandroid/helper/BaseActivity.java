@@ -1,23 +1,19 @@
-package com.example.se.travezeandroid;
+package com.example.se.travezeandroid.helper;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
-import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.example.se.travezeandroid.AdminActivity;
+import com.example.se.travezeandroid.LoginActivity;
+import com.example.se.travezeandroid.MainActivity;
+import com.example.se.travezeandroid.MyAccountActivity;
+import com.example.se.travezeandroid.R;
 
 public class BaseActivity extends AppCompatActivity {
     protected MyPreference myPreference;

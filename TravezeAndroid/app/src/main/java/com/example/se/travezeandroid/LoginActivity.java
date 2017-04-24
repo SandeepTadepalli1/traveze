@@ -17,6 +17,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.se.travezeandroid.helper.Constants;
+import com.example.se.travezeandroid.helper.MyPreference;
+import com.example.se.travezeandroid.helper.Routes;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -121,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         };
-        JsonObjectRequest signInRequest = new JsonObjectRequest(Request.Method.POST,Routes.Authenticate,signInObject,responseListner,null);
+        JsonObjectRequest signInRequest = new JsonObjectRequest(Request.Method.POST, Routes.Authenticate,signInObject,responseListner,null);
         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
         queue.add(signInRequest);
     }

@@ -27,7 +27,7 @@
             android:name=".MyAccountActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".BaseActivity"
+            android:name=".helper.BaseActivity"
             android:label="@string/title_activity_base"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EditProfileActivity" />

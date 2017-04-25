@@ -13,6 +13,7 @@ import com.example.se.travezeandroid.helper.HotelAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -30,8 +31,10 @@ public class HotelsListActivity extends BaseActivity {
         setContentView(R.layout.activity_hotels_list);
         ButterKnife.bind(this);
         Intent intent = getIntent();
-
+        String details;
         try {
+//            final JSONObject details = new JSONObject(intent.getStringExtra("details"));
+            details = intent.getStringExtra("details");
             final JSONArray hotels = new JSONArray(intent.getStringExtra("hotels"));
             Log.v(TAG,hotels.toString());
             Log.i(TAG,"Creating Array list of Hotels");
@@ -60,7 +63,15 @@ public class HotelsListActivity extends BaseActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     createShortToast(Integer.toString(position));
                     try {
-                        Log.v(TAG,hotels.getJSONObject(position).toString());
+                        JSONObject hotel = hotels.getJSONObject(position);
+                        Log.v(TAG,hotel.toString());
+
+                        Intent intent = new Intent(getApplicationContext(),HotelInfoActivity.class)
+                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.putExtra("hotel",hotel.toString());
+
+                        getApplicationContext().startActivity(intent);
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

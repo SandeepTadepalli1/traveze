@@ -11,4 +11,5 @@ public class Routes {
     public static final String Update = HOSTNAME + "/user/update";
     public static final String AddHotel = HOSTNAME + "/admin/add_hotel";
     public static final String GetHotels = HOSTNAME + "/place/hotels";
+    public static final String GetRooms = HOSTNAME + "/hotel/rooms";
 }

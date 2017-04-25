@@ -32,7 +32,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".AdminActivity" />
-        <activity android:name=".HotelsListActivity"></activity>
+        <activity android:name=".HotelsListActivity" />
+        <activity android:name=".HotelInfoActivity"></activity>
     </application>
 
 </manifest>

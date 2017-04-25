@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'user/create_trip'
   post 'user/update'
   post 'user/register'
+  post 'hotel/rooms'
 
   post 'edit_hotel', to: "manager#edit_hotel"
   post 'update_room_cost', to: "manager#update_room_cost"
